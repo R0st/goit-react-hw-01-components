@@ -1,0 +1,45 @@
+.Profile {
+  margin: auto;
+  padding: 20px;
+  width: 370px;
+  background-color: #fff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+.Description {
+  text-align: center;
+}
+.Avatar {
+  margin: auto;
+}
+.Name {
+  font-size: 24px;
+  font-weight: 800;
+}
+.Tag,
+.Location {
+  color: rgba(0, 0, 0, 0.6);
+}
+.Stats {
+  padding: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  display: flex;
+  background-color: rgba(92, 89, 89, 0.1);
+}
+.Stats li {
+  display: grid;
+  padding: 20px;
+  text-align: center;
+  width: 33.33%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.Label {
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.Quantity {
+  font-weight: 500;
+}
