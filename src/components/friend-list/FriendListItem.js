@@ -12,7 +12,7 @@ const FriendListItem = props => {
     <>
       <span className={StatusClass.join(' ')}></span>
       <img
-        className="avatar"
+        className={style.avatar}
         src={props.avatar}
         alt={props.name}
         width="48"
@@ -23,7 +23,7 @@ const FriendListItem = props => {
 };
 
 FriendListItem.propTypes = {
-  avatar: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };

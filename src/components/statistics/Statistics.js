@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import StatisticItem from './StatisticItem';
-import style from './Statistics.module.css'
+import style from './Statistics.module.css';
+
 
 
 const Statistics = ({ title, stats }) => (
@@ -19,10 +20,10 @@ const Statistics = ({ title, stats }) => (
 );
 
 Statistics.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
     }),
   ).isRequired,
 };

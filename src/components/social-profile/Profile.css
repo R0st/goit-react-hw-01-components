@@ -16,6 +16,7 @@
 .Name {
   font-size: 24px;
   font-weight: 800;
+  color: rgb(61, 61, 61);
 }
 .Tag,
 .Location {
@@ -27,18 +28,19 @@
   margin-right: -20px;
   margin-bottom: -20px;
   display: flex;
-  background-color: rgba(92, 89, 89, 0.1);
+  background-color: rgba(110, 8, 76, 0.15);
 }
 .Stats li {
   display: grid;
   padding: 20px;
   text-align: center;
   width: 33.33%;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
 }
 .Label {
   margin-bottom: 5px;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.6);
 }
 .Quantity {
   font-weight: 500;

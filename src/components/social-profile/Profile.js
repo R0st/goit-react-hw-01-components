@@ -1,41 +1,37 @@
 import React from 'react';
-import style from './Profile.css'
+import './Profile.css'
 import PropTypes from 'prop-types'
 
 const Profile = ({avatar, name, tag, location, stats}) => (
-        <div className={style.profile}>
-        <div className={style.description}>
+        <div className="Profile">
+        <div className="Description">
             <img
                 src={avatar}
                 alt={name}
                 width="200"
-                className={style.avatar}
+                className="Avatar"
             />
-            <p className={style.name}>{name}</p>
-            <p className={style.tag}>@{tag}</p>
-            <p className={style.location}>{location}</p>
+            <p className="Name">{name}</p>
+            <p className="Tag">@{tag}</p>
+            <p className="Location">{location}</p>
         </div>
 
-        <ul className="stats">
+        <ul className="Stats">
             <li>
-                <span className={style.label}>Followers</span>
-                <span className={style.quantity}>{stats.followers}</span>
+                <span className="Label">Followers</span>
+                <span className="Quantity">{stats.followers}</span>
             </li>
             <li>
-                <span className={style.label}>Views</span>
-                <span className={style.quantity}>{stats.views}</span>
+                <span className="Label">Views</span>
+                <span className="Quantity">{stats.views}</span>
             </li>
             <li>
-                <span className={style.label}>Likes</span>
-                <span className={style.quantity}>{stats.likes}</span>
+                <span className="Label">Likes</span>
+                <span className="Quantity">{stats.likes}</span>
             </li>
         </ul>
     </div>
     );
-
-// Profile.defaultProps = {
-//     url: defaultImage,
-// };
 
 Profile.propTypes = {
     avatar: PropTypes.string.isRequired,
